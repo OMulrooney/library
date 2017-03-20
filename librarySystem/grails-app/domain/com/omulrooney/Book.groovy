@@ -7,8 +7,9 @@ class Book {
 	String author
 	String isbn
 	Date dateBorrowed
-	String student
+	Student student
 	Boolean overdue
+
 
     static constraints = {
 

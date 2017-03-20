@@ -8,7 +8,7 @@ class Librarian {
 	String username
 	String password
 	String telephone
-	String library
+	Library library
 
     static constraints = {
 
