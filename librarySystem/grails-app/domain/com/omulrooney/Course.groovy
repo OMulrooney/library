@@ -9,6 +9,16 @@ class Course {
 	String description
 	String studyMode
 
+	static hasMany=[student:Student]
+
+	String toString(){
+		return title
+	}
+
+	String isFullTime(){
+		return studyMode
+	}
+
     static constraints = {
 
 	title blank:false, nullable:false

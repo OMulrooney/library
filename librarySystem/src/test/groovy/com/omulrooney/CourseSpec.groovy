@@ -15,8 +15,15 @@ class CourseSpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void studyModeTest() {
+        when:"A Course Has Been Created"
+	def course1=new Course(title:'Comp Sci',
+				code:'comp212',
+				leader:'Harry',
+				department:'computing',
+				description:'computers and stuff',
+				studyMode: 'Full Time')
+	then:"This will check to see if the course is full time"
+	course1.isFullTime() == 'Full Time'
     }
 }

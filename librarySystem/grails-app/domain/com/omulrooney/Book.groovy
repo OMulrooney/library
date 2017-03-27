@@ -9,7 +9,16 @@ class Book {
 	Date dateBorrowed
 	Student student
 	Boolean overdue
+	
+	static hasMany=[bookreview:BookReview]
 
+	String toString(){
+		return title
+	}
+
+	Boolean isOverdue(){
+		return overdue
+	}
 
     static constraints = {
 

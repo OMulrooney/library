@@ -9,7 +9,11 @@ class Student {
 	String studentId
 	Course course
 
-	//static hasMany [books:Book, bookreviews:BookReview]
+	static hasMany=[bookreview:BookReview, book:Book]
+
+	String toString(){
+		return name
+	}
 
     static constraints = {
 
