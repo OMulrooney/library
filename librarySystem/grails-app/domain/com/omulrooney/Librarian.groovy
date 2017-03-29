@@ -10,6 +10,10 @@ class Librarian {
 	String telephone
 	Library library
 
+	int telephoneTest(){
+		return telephone.length()
+	}
+
     static constraints = {
 
 	name blank:false, nullable:false

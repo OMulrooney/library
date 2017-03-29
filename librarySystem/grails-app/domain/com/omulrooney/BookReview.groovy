@@ -7,6 +7,10 @@ class BookReview {
 	Student student
 	String review
 
+	String returnReview(){
+		return review
+	}
+
     static constraints = {
 
 	book blank:false, nullable:false

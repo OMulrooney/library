@@ -15,8 +15,21 @@ class LibrarianSpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void telephoneLengthTest() {
+        when: "A Librarian Has Been Created"
+	def library1 = new Library(building: 'Cantor',
+				address: '123 Placeholder road',
+				openingHours: '09:00 - 20:00',
+				location: 'Sheffield',
+				studySpaces:50)
+	def librarian1 = new Librarian(name:'Leroy Jenkins',
+					email:'LJ@chicken.com',
+					office:'123',
+					username:'LJenks',
+					telephone:'01145769230',
+					password:'supersecret',
+					library:library1)
+	then:"This will check if the phone number is the right length"
+	librarian1.telephoneTest() == 11
     }
 }

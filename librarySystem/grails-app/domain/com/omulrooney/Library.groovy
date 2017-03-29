@@ -10,6 +10,10 @@ class Library {
 
 	static hasMany =[librarian:Librarian, book:Book, student:Student]
 
+	int studySpacesValue(){
+		return studySpaces
+	}
+
     static constraints = {
 
 	building blank:false, nullable:false

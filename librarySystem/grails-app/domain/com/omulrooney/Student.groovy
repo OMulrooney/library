@@ -15,6 +15,11 @@ class Student {
 		return name
 	}
 
+	
+	String hasPassword(){
+		return password
+	}
+
     static constraints = {
 
 	name blank:false, nullable:false
