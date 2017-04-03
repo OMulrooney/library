@@ -14,6 +14,10 @@ class Library {
 		return studySpaces
 	}
 
+	String toString(){
+		return building
+	}
+
     static constraints = {
 
 	building blank:false, nullable:false
