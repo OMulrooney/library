@@ -6,5 +6,4 @@ class StudentController {
 
 
 
-    def index() { }
 }

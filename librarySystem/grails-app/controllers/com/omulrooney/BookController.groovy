@@ -4,5 +4,4 @@ class BookController {
 
 	    def scaffold = Book
 
-    def index() { }
 }
